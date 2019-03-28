@@ -54,7 +54,6 @@ background-position: center center;
     .infobox{
         color: white;
         padding: 70px 0;
-    
     }
     .infobox .infobox1{
         background: #e9204f;
@@ -108,6 +107,23 @@ background-position: center center;
         font-size: 60px;
         padding-top: 65px;
         padding-left: 35px;
+    }
+    .square i{
+        float:right ;
+        position: relative;
+     
+    }
+    @keyframes ulvi{
+       0%{
+           left: 20px;
+       }
+       100%{
+           left: 40px;
+       }
+    }
+    .square:hover i{
+        animation: ulvi .3s infinite;
+        animation-iteration-count: 1;
     }
     .choosebox .service p{
         color: #e9204f;
@@ -256,11 +272,6 @@ background-position: center center;
             padding: 70px;
             margin: 25px;
         }
-   .clients img{
-    width: 103%;
-    padding-left: 165px;
-    height: 75%;
-   }
    .clients h2{
     padding-top: 40px;
     padding-left: 40px;
@@ -302,15 +313,27 @@ background-position: center center;
    .responsive{
        position: relative;
        color: white;
+       filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+   }
+   .responsive:hover{
+    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+   }
+   .responsive2:hover{
+    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
    }
    .responsive2{
        position: relative;
        color: white;
+       filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
    }
    .digital {
        position: relative;
        color: white;
-
+       filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+ 
+    }
+    .digital:hover{
+        filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
     }
    .digital p{
        position: absolute;
@@ -429,3 +452,20 @@ background-position: center center;
 color: white;
 text-align: center;
     }
+    .box-all{
+        position: relative;
+        filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    }
+    .box-all:hover{
+        filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+    }
+    @keyframes ali{
+        0%{
+           bottom: 0; 
+        }
+        100%{
+            bottom: 30px;
+        }}
+        .box-all:hover .box-agency {
+            animation: ali .3s linear;
+        }
